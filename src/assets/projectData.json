@@ -1,0 +1,119 @@
+[
+  {
+    "id":7,
+    "date":"June 2020 - August 2020",
+    "title":"MinecraftBot",
+    "reason":"Personal Project",
+    "tools":["JavaScript"],
+    "details":[
+      "Developed a Discord bot using Discord.js to allow server members to seamlessly start and stop a Minecraft server remotely.",
+      "Other features include: Requesting server IP, requesting server population, and facilitating admin commands."
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/PSYmoom/MinecraftBot"},
+      {"desc":"Documentation of Discord.js", "link":"https://discord.js.org/#/docs/main/stable/general/welcome"}
+    ]
+  },
+  {
+    "id":6,
+    "date":"April 2020",
+    "title":"CarePost",
+    "reason":"hack:now",
+    "tools":["Android Studios", "Firestore"],
+    "details":[
+      "Developed an app using Android Studios to help maintain social distancing in apartment complexes during COVID-19 by allocating different package pickup times for the tenants.",
+      "The person delivering mail/packages will have to enter the apartment number and full name for the recipient.",
+      "At the end of the day, an office personal will press a button which automatically creates a pickup schedule for the next day.",
+      "The schedule is automatically loaded up to a mass email list, ready to be sent."
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/mmaaz1/CarePost"}
+    ]
+  },
+  {
+    "id":5,
+    "date":"April 2019 – September 2019",
+    "title":"Offroad Vehicle",
+    "reason":"Personal Project",
+    "tools":["Python", "Raspberry Pi"],
+    "details":[
+      "Built a vehicle with Raspberry Pi in Python which can be controlled using a phone and can display video feed and sensor values on a local network.",
+      "BlueDot application is used to control the speed and steering of the vehicle. It requires an Android phone with Bluetooth to operate.",
+      "A picamera is used to take a video feed of the car while it is on. Https.server class is used to display the video feed on a local network.",
+      "A Sense HAT is used to measure the temperature, humidity, pressure and acceleration of the car. Https.server class is used to display the data feed on a local network. At the end of the drive, pyplot is used to graph the data set for ease of data analysis.",
+      "Blue Robotics Basic ESC was used to control the speed of the brushless DC motor."
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/george-xiao/Offroad-Vehicle/tree/new_features"},
+      {"desc":"Documentation of picamera", "link":"https://picamera.readthedocs.io/en/release-1.13/"},
+      {"desc":"Documentation of Sense HAT", "link":"https://pythonhosted.org/sense-hat/"},
+      {"desc":"Documentation of https.server", "link":"https://docs.python.org/3/library/http.server.html"},
+      {"desc":"Documentation of Blue Robotics", "link":"https://bluerobotics.com/store/thrusters/speed-controllers/besc30-r3/"}
+    ]
+  },
+  {
+    "id":4,
+    "date":"January 2019 - April 2019",
+    "title":"Portioning Gadget",
+    "reason":"School Project",
+    "tools":["Arduino UNO", "3D printing", "Laser cutting"],
+    "details":[
+      "Designed and manufactured a gadget prototype to help automatically portion raw ingredients for automated kitchens.",
+      "Arduino UNO was used to control a linear actuator to help with dispense portioned raw ingredients when required.",
+      "3D printed structures, such as brackets and funnels, were designed using AutoCAD and Fusion 360.",
+      "Laser-cut structures, such as support and containers, were designed using Inkscape."
+    ],
+    "links":[
+      {"desc":"View Design on Github", "link":"https://github.com/PSYmoom/Portioning-Gadget"}
+    ]
+  },
+  {
+    "id":3,
+    "date":"February 2018 - May 2018",
+    "title":"F1 in Schools",
+    "reason":"School Project",
+    "tools":["AutoDesk AutoCAD" , "AutoDesk Flow Design"],
+    "details":[
+      "A school project where we had to design, manufacture, and then race 3D-printed miniature compressed air powered cars.",
+      "AutoDesk AutoCAD was used to design the body and the wheels of the car.",
+      "AutoDesk Flow Design was used to simulate the final drag experienced by the car. These results were used to iteratively improve the aerodynamics of the car."
+    ],
+    "links":[
+      {"desc":"View Design on Github", "link":"https://github.com/PSYmoom/F1inSchools"},
+      {"desc":"Rules and Regulations", "link":"https://www.f1inschools.com/rules--regs.html"}
+    ]
+  },
+  {
+    "id":2,
+    "date":"December 2017 - January 2018",
+    "title":"Better Guitar Tuner",
+    "reason":"School Project",
+    "tools":["Android Studios"],
+    "details":[
+      "Developed a guitar tuning app using Android Studio which accepts the pitch of a string as input and informs the user if they have to tighten or loosen the string to tune it properly.",
+      "TarsosDSP was used to process the audio in order to get the pitch of the strings.",
+      "A violin tuner as implemented afterwards as well."
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/PSYmoom/BetterInstrumentTuner"},
+      {"desc":"Documentation of TarsosDSP", "link":"https://github.com/JorenSix/TarsosDSP"}
+    ]
+  },
+  {
+    "id":1,
+    "date":"December 2016 - January 2017",
+    "title":"Kirby Saves Christmas",
+    "reason":"School Project",
+    "tools":["C"],
+    "details":[
+      "Programmed a Mario-styled (2D side-scroller) platformer where the objective is to get from one point of the screen to another while jumping over obstacles.",
+      "Allegro library was used to implement the visuals, sprite animation and the GUI.",
+      "Levels were premade using a text file, which would later get compiled into a full level at runtime."
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/PSYmoom/KirbySavesChristmas"},
+      {"desc":"Documentation of Allegro", "link":"https://liballeg.org/"}
+    ]
+  }
+
+]
