@@ -48,9 +48,6 @@ const Projects = () => (
       ))}
     </VerticalTimeline>
     <br/>
-    <p>
-      Icons made by <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-    </p>
   </Styles>
 )
 

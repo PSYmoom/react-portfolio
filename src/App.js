@@ -14,7 +14,7 @@ import Jumbo from './components/Jumbo';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-portfolio">
       <NavigationBar />
       <Jumbo />
       <Layout>

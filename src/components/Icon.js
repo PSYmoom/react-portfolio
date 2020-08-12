@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import ProjectIcon from '../assets/project.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCog } from '@fortawesome/free-solid-svg-icons'
 
 const Styles = styled.div`
   .logo-style{
@@ -9,13 +10,14 @@ const Styles = styled.div`
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-size: 20px;
   }
 `;
 
 const Icon = () => (
   <Styles>
-    <img className="logo-style" alt="Logo for timeline" src={ProjectIcon} height={28} width={28}/>
+    <FontAwesomeIcon  className="logo-style" icon={faCog}/>
   </Styles>
 );
 
