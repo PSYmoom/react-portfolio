@@ -38,6 +38,7 @@ const Projects = () => (
       {projectData.map(data => (
         <TimelineInfo
           key={data.id}
+          id={data.id}
           date={data.date}
           title={data.title}
           reason={data.reason}

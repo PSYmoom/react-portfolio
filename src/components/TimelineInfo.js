@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 function TimelineInfo(props){
   return(
       <VerticalTimelineElement
+        id={props.id}
         className="vertical-timeline-element--work"
         contentStyle={{ background: '#f8f7fc', color: '#000' }}
         contentArrowStyle={{ borderRight: '7px solid  #f8f7fc' }}
