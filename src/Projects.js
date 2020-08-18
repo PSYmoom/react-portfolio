@@ -1,10 +1,9 @@
 import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components';
 import TimelineInfo from './components/TimelineInfo';
 import projectData from './assets/projectData.json';
-import Icon from './components/Icon';
 
 const Styles = styled.div`
   .vertical-timeline::before{

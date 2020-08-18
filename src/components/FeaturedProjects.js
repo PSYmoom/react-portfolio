@@ -8,8 +8,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 const Styles = styled.div`
   .projectLinks {
       font-style: italic;
-      background: rgb(33,150,243);
-      box-shadow: 0 0 0 4px #1976d2,inset 0 0px 0 rgba(0,0,0,0.08),0 0px 0 0px rgba(0,0,0,0.05);
+      background: ${props => (props.backgroundColor)};
+      box-shadow: ${props => ("0 0 0 4px " + props.borderColor + ",inset 0 0px 0 rgba(0,0,0,0.08),0 0px 0 0px rgba(0,0,0,0.05)")};
       padding: 10px;
       height: 50px;
       &:hover {
@@ -29,8 +29,11 @@ const Styles = styled.div`
   }
 `;
 
-const FeaturedProjects = () => (
-  <Styles>
+const FeaturedProjects = (props) => (
+  <Styles
+    backgroundColor={props.container.["Background Color"].validated}
+    borderColor={props.container.["Border Color"].validated}
+  >
     <h2>Featured Projects</h2>
     <p className="paragraph">
       Here are some of the projects I had a blast working on.
