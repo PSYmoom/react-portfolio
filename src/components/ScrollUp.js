@@ -6,6 +6,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Styles = styled.div`
   .scrollUp{
+    border-color: ${props => (props.primaryColor)};
+    color: ${props => (props.primaryColor)};
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -14,6 +16,9 @@ const Styles = styled.div`
     animation-iteration-count: 1;
     &:hover {
       opacity: 1;
+      color: ${props => (props.secondaryColor)};
+      background-color: ${props => (props.primaryColor)};
+      border-color: ${props => (props.primaryColor)};
       animation: wiggle 1s ease;
       animation-iteration-count: 1;
     }
@@ -62,9 +67,19 @@ class ScrollUp extends Component {
   render() {
     if (this.state.hasScrolled) {
       return(
-        <Styles>
-          <Button variant="outline-primary" className="scrollUp" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth' })}}>
-            <FontAwesomeIcon  className="logo-style" icon={faChevronUp}/>
+        <Styles
+          primaryColor={this.props.button.["Primary Color"].validated}
+          secondaryColor={this.props.button.["Secondary Color"].validated}
+        >
+          <Button
+            variant="outline-dark"
+            className="scrollUp"
+            onClick={() => {window.scrollTo({top: 0, behavior: 'smooth' })}}
+          >
+            <FontAwesomeIcon
+              className="logo-style"
+              icon={faChevronUp}
+            />
           </Button>
         </Styles>
       );

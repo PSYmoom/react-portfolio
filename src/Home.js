@@ -18,7 +18,7 @@ class Home extends Component {
         <AboutMe />
         <ColorChanger onValueChange={(variables, value) => {this.props.onValueChange(variables, value)}} onButtonClick={(variables) => {this.props.onButtonClick(variables)}} allComponents={this.props.allComponents} />
         <Seperator />
-        <FeaturedProjects container={this.props.allComponents.["Container"]}/>
+        <FeaturedProjects container={this.props.allComponents.["Others"]}/>
       </Styles>
     );
   }

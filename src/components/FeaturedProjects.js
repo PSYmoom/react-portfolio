@@ -9,7 +9,7 @@ const Styles = styled.div`
   .projectLinks {
       font-style: italic;
       background: ${props => (props.backgroundColor)};
-      box-shadow: ${props => ("0 0 0 4px " + props.borderColor + ",inset 0 0px 0 rgba(0,0,0,0.08),0 0px 0 0px rgba(0,0,0,0.05)")};
+      box-shadow: ${props => ("0 0 0 4px " + props.borderColor)};
       padding: 10px;
       height: 50px;
       &:hover {

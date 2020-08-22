@@ -15,7 +15,7 @@ function TimelineInfo(props){
         contentArrowStyle={{ borderRight: '7px solid  #f8f7fc' }}
         date={props.date}
         iconClassName="circle-border"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        iconStyle={{ background: props.backgroundColor, color: '#fff' }}
         icon={<Icon />}
       >
         <h5 display="flex">
@@ -31,9 +31,9 @@ function TimelineInfo(props){
               {line} <br />
             </React.Fragment>
           ))}
-          <div className="bthContainer">
+          <div className="btnContainer">
             {props.links.map(element => (
-              <Button variant="outline-primary" href={element.link} size="sm">{element.desc}</Button>
+              <Button variant="outline-dark" href={element.link} size="sm">{element.desc}</Button>
             ))}
           </div>
         </p>

@@ -11,7 +11,7 @@ const AboutMe = () => (
       <br /> <br/>
       I have many skills, but color theory is not my strong suit.
       As a result, I have made it possible for you to change it as you see fit.
-      If you think there is a color combination that works really well, feel free to submit it and I might change that to the default color!
+      If you think there is a color combination that works really well, feel free to email me about it and I might change that to the default color!
     </p>
   </React.Fragment>
 );

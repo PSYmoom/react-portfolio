@@ -37,26 +37,26 @@ class App extends Component {
           error: false
         }
       },
-      "Container": {
-        "Background Color": {
-          validated: "rgb(33,150,243)",
+      "Button": {
+        "Primary Color": {
+          validated: "#343a40",
           unvalidated: "",
           error: false
         },
-        "Border Color": {
-          validated:  "#1976d2",
+        "Secondary Color": {
+          validated:  "#FFFFFF",
           unvalidated: "",
           error: false
         }
       },
-      "Button": {
-        "Primary": {
-          validated: "#222",
+      "Others": {
+        "Background Color": {
+          validated: "#a9a9a9",
           unvalidated: "",
           error: false
         },
-        "Border": {
-          validated:  "#bbb",
+        "Border Color": {
+          validated:  "#43464B",
           unvalidated: "",
           error: false
         }
@@ -86,7 +86,7 @@ class App extends Component {
   }
 
   handleButtonClick(variables) {
-    let unvalidated = String(this.state.colorChanger.[variables[0]].[variables[1]].unvalidated);
+    let unvalidated = String(this.state.colorChanger.[variables[0]].[variables[1]].unvalidated).toUpperCase();
 
     if (unvalidated.length === 7 && unvalidated >= this.state.lowerbound && unvalidated <= this.state.upperbound) {
       let newState = update(this.state, {
@@ -131,12 +131,19 @@ class App extends Component {
                 />
               )}
             />
-            <Route exact path="/projects" component={Projects} />
+            <Route
+              exact path="/projects"
+              render={(props) => (<Projects {...props}
+                others={this.state.colorChanger.["Others"]}
+                button={this.state.colorChanger.["Button"]}
+                />
+              )}
+            />
             <Route exact path="/resume" component={Resume} />
             <Route component={NoMatch} />
           </Switch>
         </Layout>
-        <ScrollUp button={this.state.button} />
+        <ScrollUp button={this.state.colorChanger.["Button"]} />
       </Router>
     );
   }
