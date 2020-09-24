@@ -9,3 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * [React PDF](https://github.com/wojtekmaj/react-pdf)
 * [gh-pages](https://github.com/gitname/react-gh-pages)
 * [Single Page Apps for GitHub Pages](https://github.com/rafgraph/spa-github-pages)
+* [icons8](https://icons8.com/)
