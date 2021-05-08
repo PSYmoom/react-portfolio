@@ -1,6 +1,22 @@
 [
   {
-    "id":7,
+    "id":"8",
+    "date":"February 2021",
+    "title":"Local Covid-19 Clinics",
+    "reason":"uOttaHack 4",
+    "tools":["Android Studios", "Java"],
+    "details":[
+      "Developed an app using Android Studios to help users locate the closest COVID-19 clinics in their area.",
+      "The app also displays other information, such as clinic information, directions to the clinic and the COVID-19 situation near the clinic.",
+      "Multiple APIs were used to retrieve relevant information"
+    ],
+    "links":[
+      {"desc":"View Code on Github", "link":"https://github.com/ndizo012/Hackathon2021"},
+      {"desc":"View Project Details on DevPost", "link":"https://devpost.com/software/local-covid-19-clinics"}
+    ]
+  },
+  {
+    "id":"7",
     "date":"June 2020 - August 2020",
     "title":"MinecraftBot",
     "reason":"Personal Project",
@@ -15,11 +31,11 @@
     ]
   },
   {
-    "id":6,
+    "id":"6",
     "date":"April 2020",
     "title":"CarePost",
     "reason":"hack:now",
-    "tools":["Android Studios", "Firestore"],
+    "tools":["Android Studios", "Firestore", "Java"],
     "details":[
       "Developed an app using Android Studios to help maintain social distancing in apartment complexes during COVID-19 by allocating different package pickup times for the tenants.",
       "The person delivering mail/packages will have to enter the apartment number and full name for the recipient.",
@@ -27,11 +43,12 @@
       "The schedule is automatically loaded up to a mass email list, ready to be sent."
     ],
     "links":[
-      {"desc":"View Code on Github", "link":"https://github.com/mmaaz1/CarePost"}
+      {"desc":"View Code on Github", "link":"https://github.com/mmaaz1/CarePost"},
+      {"desc":"View Project Details on DevPost", "link":"https://devpost.com/software/carepost"}
     ]
   },
   {
-    "id":5,
+    "id":"5",
     "date":"April 2019 – September 2019",
     "title":"Offroad Vehicle",
     "reason":"Personal Project",
@@ -52,7 +69,7 @@
     ]
   },
   {
-    "id":4,
+    "id":"4",
     "date":"January 2019 - April 2019",
     "title":"Portioning Gadget",
     "reason":"School Project",
@@ -68,7 +85,7 @@
     ]
   },
   {
-    "id":3,
+    "id":"3",
     "date":"February 2018 - May 2018",
     "title":"F1 in Schools",
     "reason":"School Project",
@@ -84,7 +101,7 @@
     ]
   },
   {
-    "id":2,
+    "id":"2",
     "date":"December 2017 - January 2018",
     "title":"Better Guitar Tuner",
     "reason":"School Project",
@@ -92,7 +109,7 @@
     "details":[
       "Developed a guitar tuning app using Android Studio which accepts the pitch of a string as input and informs the user if they have to tighten or loosen the string to tune it properly.",
       "TarsosDSP was used to process the audio in order to get the pitch of the strings.",
-      "A violin tuner as implemented afterwards as well."
+      "A violin tuner as implemented afterward as well."
     ],
     "links":[
       {"desc":"View Code on Github", "link":"https://github.com/PSYmoom/BetterInstrumentTuner"},
@@ -100,7 +117,7 @@
     ]
   },
   {
-    "id":1,
+    "id":"1",
     "date":"December 2016 - January 2017",
     "title":"Kirby Saves Christmas",
     "reason":"School Project",

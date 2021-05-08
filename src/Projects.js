@@ -20,7 +20,7 @@ const Styles = styled.div`
     margin-right: .2em;
     background: ${props => (props.borderColor)};
   }
-  .btn-outline-dark {
+  .btn-outline-secondary {
     margin-top: 5px;
     margin-right: .6em;
     border-color: ${props => (props.primaryColor)};

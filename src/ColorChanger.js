@@ -14,26 +14,41 @@ const Styles = styled.div`
     margin-top:8px;
     margin-bottom:10px;
   }
+  button.rounded-right-side.btn.btn-outline-secondary {
+    border-radius: 0 .25rem .25rem 0;
+    border-color: ${props => (props.primaryColor)};
+    color: ${props => (props.primaryColor)};
+    &:hover {
+      color: ${props => (props.secondaryColor)};
+      background-color: ${props => (props.primaryColor)};
+      border-color: ${props => (props.primaryColor)};
+    }
+  }
 `;
 
 class ColorChanger extends Component {
   render() {
    return(
-     <Styles>
+     <Styles
+      primaryColor={this.props.allComponents.["Button"].["Primary Color"].validated}
+      secondaryColor={this.props.allComponents.["Button"].["Secondary Color"].validated}
+     >
       <Container>
         <h2 className="heading-two">Color Changer</h2>
-        {Object.keys(this.props.allComponents).map((component) => (
-          <React.Fragment>
+        {Object.keys(this.props.allComponents).map((component, i) => (
+          <React.Fragment key={i}>
             <h4> {component} </h4>
             <Row>
-              {Object.keys(this.props.allComponents.[component]).map((variable) => (
-                <Col sm={true} md={this.props.allComponents.[component].length / 12}>
+              {Object.keys(this.props.allComponents.[component]).map((variable, i) => (
+                <Col key={i} sm={true} md={this.props.allComponents.[component].length / 12}>
                  <ColorInput
                   name={variable}
                   names={[component, variable]}
+                  currentColor={this.props.allComponents.[component].[variable].validated}
                   error={this.props.allComponents.[component].[variable].error}
                   onValueChange={(variables, value) => {this.props.onValueChange(variables, value)}}
                   onButtonClick={(variables) => {this.props.onButtonClick(variables)}}
+                  button={this.props.allComponents.["Button"]}
                   />
                  </Col>
               ))}

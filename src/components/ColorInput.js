@@ -15,11 +15,13 @@ class ColorInput extends Component {
             type="text"
             aria-label="Small"
             aria-describedby="inputGroup-sizing-sm"
+            placeholder={this.props.currentColor}
             onChange={(event) => {this.props.onValueChange(this.props.names, event.target.value)}}
             isInvalid={this.props.error}
           />
           <InputGroup.Prepend>
             <Button
+              className="rounded-right-side"
               variant="outline-secondary"
               onClick={() => {this.props.onButtonClick(this.props.names)}}
             >

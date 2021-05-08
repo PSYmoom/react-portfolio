@@ -22,24 +22,24 @@ class App extends Component {
     colorChanger:{
       "Navigation Bar": {
         "Background Color": {
-          validated: "#222",
+          validated: "#020202",
           unvalidated: "",
           error: false
         },
         "Text Color": {
-          validated:  "#bbb",
+          validated:  "#BBBBBB",
           unvalidated: "",
           error: false
         },
         "Hover Color": {
-          validated:  "white",
+          validated:  "#FFFFFF",
           unvalidated: "",
           error: false
         }
       },
       "Button": {
         "Primary Color": {
-          validated: "#343a40",
+          validated: "#6c757d",
           unvalidated: "",
           error: false
         },
@@ -51,7 +51,7 @@ class App extends Component {
       },
       "Others": {
         "Background Color": {
-          validated: "#a9a9a9",
+          validated: "#5c5c5c",
           unvalidated: "",
           error: false
         },

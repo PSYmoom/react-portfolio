@@ -9,7 +9,7 @@ const Styles = styled.div`
     background-color: ${props => (props.backgroundColor)};
   }
 
-  a {
+  a, .navbar-dark .navbar-nav .nav-link {
     color : ${props => (props.textColor)};
 
     &:hover {
@@ -34,18 +34,18 @@ function NavigationBar(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Item>
-              <Nav.Link>
-                <Link to="/">Home</Link>
+              <Nav.Link as={Link} to="/">
+                Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>
-                <Link to="/projects">Projects</Link>
+              <Nav.Link as={Link} to="/projects">
+                Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>
-                <Link to="/resume">Resume</Link>
+              <Nav.Link as={Link} to="/resume">
+                Resume
               </Nav.Link>
             </Nav.Item>
           </Nav>

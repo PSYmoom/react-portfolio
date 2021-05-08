@@ -1,65 +1,49 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 const Styles = styled.div`
-  .projectLinks {
-      font-style: italic;
-      background: ${props => (props.backgroundColor)};
-      box-shadow: ${props => ("0 0 0 4px " + props.borderColor)};
-      padding: 10px;
-      height: 50px;
-      &:hover {
-        padding: 5px;
-      }
-    }
-  a {
-    text-decoration: none;
-    color: black;
+  .slide-style {
+    background: grey;
     display: flex;
+    align-items: center;
     justify-content: center;
-    &:hover {
-      font-size:150%;
-      color: white;
-      font-weight: bold;
-    }
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    height: 300px;
+    max-height: 100vh;
+    background: linear-gradient(
+      128deg,
+      rgba(225, 225, 225, 1) 0%,
+      ${props => (props.backgroundColor)} 100%
+    );
   }
 `;
 
-const FeaturedProjects = (props) => (
-  <Styles
-    backgroundColor={props.container.["Background Color"].validated}
-    borderColor={props.container.["Border Color"].validated}
-  >
-    <h2>Featured Projects</h2>
-    <p className="paragraph">
-      Here are some of the projects I had a blast working on.
-    </p>
-    <Container>
-      <Row>
-        <Col md="4" className="projectLinks" >
-          <Link to="/projects#7" >MinecraftBot</Link>
-        </Col>
-        <Col md="4" className="projectLinks" >
-          <Link to="/projects#6" >CarePost</Link>
-        </Col>
-        <Col md="4" className="projectLinks" >
-          <Link to="/projects#5" >Offroad Vehicle</Link>
-        </Col>
-      </Row>
-      <Row>
-        <Col md="6" className="projectLinks" >
-          <Link to="/projects#3" >F1 in Schools</Link>
-        </Col>
-        <Col md="6" className="projectLinks" >
-          <Link to="/projects#1" >Kirby Saves Christmas</Link>
-        </Col>
-      </Row>
-    </Container>
-  </Styles>
-);
+function FeaturedProjects(props) {
+  const [sliderRef] = useKeenSlider({ loop: true });
+
+  return (
+    <Styles
+      backgroundColor={props.container.["Background Color"].validated}
+    >
+      <h2>Featured Projects</h2>
+      <p className="paragraph">
+        Here are some of the projects I had a blast working on.
+      </p>
+      <div ref={sliderRef} className="keen-slider">
+        <Link to="/projects#7" className="keen-slider__slide slide-style">MinecraftBot</Link>
+        <Link to="/projects#6" className="keen-slider__slide slide-style">CarePost</Link>
+        <Link to="/projects#5" className="keen-slider__slide slide-style">Offroad Vehicle</Link>
+        <Link to="/projects#3" className="keen-slider__slide slide-style">F1 in Schools</Link>
+        <Link to="/projects#1" className="keen-slider__slide slide-style">Kirby Saves Christmas</Link>
+      </div>
+    </Styles>
+  );
+}
 
 export default FeaturedProjects;

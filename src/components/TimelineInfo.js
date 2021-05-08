@@ -19,28 +19,26 @@ function TimelineInfo(props){
         icon={<Icon />}
       >
         <h5 display="flex">
-          {props.tools.map(tool => (
-            <Badge pill variant="dark">{tool}</Badge>
+          {props.tools.map((tool, i) => (
+            <Badge key={i} pill variant="dark">{tool}</Badge>
           ))}
         </h5>
         <h3 className="vertical-timeline-element-title">{props.title}</h3>
         <h5 className="vertical-timeline-element-subtitle"><i>{props.reason}</i></h5>
         <p>
-          {props.details.map(line => (
-            <React.Fragment>
+          {props.details.map((line, i) => (
+            <React.Fragment key={i}>
               {line} <br />
             </React.Fragment>
           ))}
-          <div className="btnContainer">
-            {props.links.map(element => (
-              <Button variant="outline-dark" href={element.link} size="sm">{element.desc}</Button>
+          <span className="btnContainer">
+            {props.links.map((element, i) => (
+              <Button key={i} variant="outline-secondary" href={element.link} size="sm">{element.desc}</Button>
             ))}
-          </div>
+          </span>
         </p>
       </VerticalTimelineElement>
   )
 };
 
 export default TimelineInfo;
-//{props.details[0] + "\n"} <br />
-//{props.details[1]} <br />
